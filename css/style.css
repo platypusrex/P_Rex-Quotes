@@ -1,0 +1,159 @@
+body {
+    padding-top: 2%;
+    background: url('http://img09.deviantart.net/e8c2/i/2013/184/4/7/dreamcatcher_by_equineribbon-d6bq51m.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
+html,
+body,
+#text-container,
+.title-container::before {
+    width: 100%;
+    height: 100%;
+}
+
+.title-container {
+    background-color: white;
+    border-radius: 0.625em;
+    margin-bottom: 2em;
+    box-shadow: 0.0625em 0.4375em 0.5em;
+    position: relative;
+    max-width: ;
+}
+
+.title-container::before {
+    background-image: url('http://img09.deviantart.net/e8c2/i/2013/184/4/7/dreamcatcher_by_equineribbon-d6bq51m.jpg');
+    display: block;
+    position: absolute;
+    content: ' ';
+    -webkit-filter: blur(0.375em);
+    filter: blur(0.375em);
+    background-size: cover;
+    opacity: 0.4;
+}
+
+header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: #000;
+    padding-top: 0.55em;
+}
+
+#leading-text hr {
+    margin-top: -0.1em;
+    margin-right: 2em;
+    margin-left: 2em;
+    border-color: #000;
+    padding-bottom: 0.7em;
+}
+
+#leading-text .lead,
+#leading-text .small {
+    color: #fff;
+    text-shadow:
+    2px 0.0625em 0 #3a3a3a,
+    -0.0625em -0.0625em 0 #3a3a3a,
+    0.0625em -0.0625em 0 #3a3a3a,
+    -0.0625em 0.0625em 0 #3a3a3a,
+    0.0625em 0.0625em 0 #3a3a3a;
+}
+
+#leading-text .lead {
+    margin-bottom: 1.15em;
+    font-weight: 500;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 0.0625em;
+}
+
+#leading-text .small{
+    font-size: 0.875em;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 0.0625em;
+}
+
+#categories {
+    margin-bottom: 0.75em;
+}
+
+#categories .selectpicker {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0.75em;
+}
+
+
+
+.btn-info {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 0.625em;
+}
+
+@media screen and (max-width: 467px){
+    .btn-info {
+        margin-top: 0.75em;
+    }
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 0.625em solid #ccc;
+    margin: 2em 0.625em;
+    padding: 0.75em 0.625em;
+    quotes: "\201C""\201D";
+    box-shadow: 0.0625em 0.4375em 0.5em;
+    display: none;
+}
+
+blockquote .quote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4.8em;
+    line-height: 0.1em;
+    margin-right: 0.07em;
+    vertical-align: -0.25em;
+}
+
+blockquote .quote:after {
+    color: #ccc;
+    content: close-quote;
+    font-size: 5em;
+    line-height: 0.1em;
+    margin-left: 0.07em;
+    vertical-align: -0.25em;
+}
+
+.quote {
+    display: none;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.625em;
+}
+
+.author {
+    display: none;
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.375em;
+    margin-top: -0.275em;
+}
+
+#quote-container .alert {
+    display: none;
+}
+
+#tweet-container .btn-block {
+    margin-bottom: 2em;
+    display: none;
+}
+
+.api-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.api-container span {
+    display: none;
+}
+
+
+
