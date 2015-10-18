@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE-edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title P_Rex Weather
+        link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", rel="stylesheet", type="text/css")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.3/css/bootstrap-select.min.css", rel="stylesheet", type="text/css")
+        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", rel="stylesheet", type="text/css")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css", rel="stylesheet", type="text/css")
+        link(href="https://fonts.googleapis.com/css?family=Raleway", rel="stylesheet", type="text/css")
+        link(href="https://fonts.googleapis.com/css?family=Reenie+Beanie", rel="stylesheet", type="text/css")
+        link(href="css/style.css", rel="stylesheet")
+    body
+        section#quote-generator
+            div.container.text-center
+                div.row
+                    div.col-xs-10.col-xs-offset-1
+                        div.row#leading-text
+                            div.col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+                                article.title-container
+                                    header
+                                        h1 P_Rex Quote Catcher
+                                        hr
+                                p.lead Looking for inspiration? Well...look no further! Get quotes from the greatest literary minds in history!
+                                div.row
+                                    div.col-xs-8.col-xs-offset-2
+                                        p.small Choose a category and click the button!
+                        div.row#categories
+                            div.col-sm-8.col-sm-offset-2.col-md-8.col-md-offset-2
+                                select.selectpicker.show-tick(multiple title='Choose one of the following', data-max-options='1', data-live-search='true', data-size='6')
+                                    each val in ['James Joyce', 'William Faulkner', 'Vladimir Nabokov', 'Virginia Woolf', 'William Shakespeare', 'Henry James', 'D. H. Lawrence',  'George Orwell', 'John Steinbeck', 'F. Scott Fitzgerald', 'Ernest Hemingway', 'Joseph Conrad', 'Leo Tolstoy', 'Fyodor Dostoyevsky', 'Marcel Proust', 'William Butler Yeats', 'William Wordsworth', 'Herman Melville', 'William Blake', 'Charles Dickens', 'Franz Kafka', 'Walt Whitman', 'Edgar Allan Poe', 'Toni Morrison', 'John Keats', 'Joseph Heller', 'Kurt Vonnegut', 'E.M. Forster', 'Willa Cather', 'Aldous Huxley', 'Homer', 'John Milton', 'Rudyard Kipling', 'Jane Austen', 'Mark Twain', 'Gustave Flaubert', 'Stendhal', 'Emily Dickinson', 'J. D. Salinger', 'Samuel Beckett', 'Jack Kerouac', 'Edith Wharton', 'George Eliot', 'Johann Wolfgang von Goethe', 'Evelyn Waugh', 'Laurence Sterne', 'John Donne', 'Geoffrey Chaucer', 'J. R. R. Tolkien', 'Emily Bronte', 'William Golding', 'Anton Chekhov', 'Percy Bysshe Shelley', 'Charlotte Bronte', 'Charles Baudelaire', 'Thomas Mann', 'Euripides', 'Virgil', 'Pablo Neruda', 'James Baldwin', 'Thomas Hardy', 'Gabriel Garcia Marquez', 'Henry Miller', 'Thomas Pynchon', 'William Carlos Williams', 'Ovid', 'Harper Lee', 'Samuel Taylor Coleridge', 'Jack London', 'Saul Bellow', 'Ayn Rand', 'Honore\' de Balzac', 'Sophocles', 'Gertrude Stein', 'Nathaniel Hawthorne', 'Robert Frost', 'Henry Wadsworth Longfellow', 'Langston Hughes', 'Robert Browning', 'Alfred Lord Tennyson', 'Henry Fielding', 'Rabindranath Tagore', 'Maya Angelou', 'Anthony Burgess', 'Charles Bukowski', 'Sylvia Plath', 'T.S. Eliot', 'Alexander Pushkin', 'Ivan Turgenev', 'John Irving', 'Dr. Seuss', 'Shel Silverstein', 'Abraham Lincoln', 'Albert Einstein', 'Stephen Hawking', 'J. K. Rowling', 'Ken Kesey', 'Douglas Adams', 'E.B. White', 'Orson Scott Card', 'Betty Smith', 'Truman Capote', 'Paulo Coelho', 'Barbara Kingsolver', 'Alice Walker', 'Arthur Conan Doyle', 'Stephen King', 'Maurice Sendak', 'Hermann Hesse', 'Roald Dahl', 'Umberto Eco', 'Frances Hodgson Burnett', 'Frank Herbert', 'Amy Tan', 'Zora Neale Hurston', 'Hunter S. Thompson', 'Oscar Wilde', 'Alexandre Dumas', 'Victor Hugo', 'Robert Louis Stevenson', 'Elizabeth Gaskell', 'H.G. Wells', 'Lewis Carroll', 'L. Frank Baum', 'Jules Verne', 'Karl Marx', 'Henry David Thoreau', 'Anna Sewell', 'Jonathan Swift', 'Daniel Defoe', 'James Madison', 'Benjamin Franklin', 'Alexander Hamilton', 'Thomas Jefferson', 'Jean-Jacques Rousseau', 'Adam Smith', 'Thomas Paine', 'David Hume', 'Immanuel Kant', 'Edmund Burke']
+                                        option=val
+                                btn.btn.btn-info.btn-lg Get Quote!
+                        div.row#quote-container
+                            div.col-xs-12.col-md-10.col-md-offset-1
+                                blockquote
+                                    p.quote
+                                    div
+                                        p.author
+                                div.alert.alert-danger
+                                    strong Error!
+                                        span
+                        div.row#tweet-container
+                            div.col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-4
+                                a.btn.btn-info.btn-block(target='_blank') Tweet This Quote!
+                                    i.fa.fa-twitter.fa-1x
+                            div.col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-4.api-container
+                                span(style="font-size:0.9em;")
+                                    img(src="http://theysaidso.com/branding/theysaidso.png", height="20", width="20", alt="theysaidso.com")
+                                    a(href="http://theysaidso.com", title="Powered by quotes from theysaidso.com", style="color: #9fcc25; margin-left: 4px; vertical-align: middle;") quotes.net
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js", type="text/javascript")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.3/js/bootstrap-select.min.js" type="text/javascript")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js", type="text/javascript")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js", type="text/javascript")
+        script(src="js/quotes.js", text="javascript")
